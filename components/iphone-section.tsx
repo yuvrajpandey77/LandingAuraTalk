@@ -32,7 +32,7 @@ export default function IPhoneDynamicIslandSection() {
           <div className="relative bg-black rounded-[3.2rem] p-[6px] shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
 
             {/* Screen */}
-            <div className="relative bg-white rounded-[2.7rem] overflow-hidden aspect-[9/19.5]">
+            <div className="relative bg-white rounded-[2.7rem] overflow-hidden aspect-[9/17.5]">
 
               {/* Dynamic Island */}
               <div className="absolute top-3 left-1/2 -translate-x-1/2 z-20">
