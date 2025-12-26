@@ -13,8 +13,8 @@ export default function HeroSection() {
 
   return (
     <section className="relative pt-2 pb-0">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="relative rounded-3xl pt-10 overflow-hidden border border-gray-200 min-h-[600px] md:min-h-[700px]">
+      <div className="mx-auto px-4 md:px-8">
+        <div className="relative rounded-3xl pt-10 overflow-hidden border border-gray-200 min-h-[37.5rem] md:min-h-[43.75rem]">
           {/* Background - White */}
           <div className="absolute inset-0 bg-white"></div>
 
@@ -29,7 +29,7 @@ export default function HeroSection() {
           ></div>
 
           {/* Content Container */}
-          <div className="relative z-10 p-8 md:p-12 lg:p-16 h-full min-h-[600px] md:min-h-[700px]">
+          <div className="relative z-10 p-8 md:p-12 lg:p-16 h-full min-h-[37.5rem] md:min-h-[43.75rem]">
             {/* Left Side Content */}
             <div className="absolute left-2 md:left-2 lg:left-4 top-8 md:top-12 lg:top-16 right-1/2  flex flex-col h-[calc(100%-4rem)] md:h-[calc(100%-6rem)]">
               {/* Badge */}
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 <img
                   src="./hero1.png"
                   alt="Doctor consulting patient"
-                  className="w-350 h-75 object-cover rounded-2xl grayscale"
+                  className="w-full h-auto object-cover rounded-2xl grayscale"
                 />
               </div>
             </div>
