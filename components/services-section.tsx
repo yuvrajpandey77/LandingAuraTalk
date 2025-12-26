@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Container, SECTION_SPACING } from "@/lib/layout"
 
 export default function ServicesSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -24,8 +25,8 @@ export default function ServicesSection() {
   }, [])
 
   return (
-    <section id="services-section" className="py-16 md:py-24 px-4 md:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="services-section" className={`${SECTION_SPACING} bg-gray-50`}>
+      <Container>
         {/* Top Section - Heading and Description */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-12">
           {/* Left - Heading with Arrow */}
@@ -143,7 +144,7 @@ export default function ServicesSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

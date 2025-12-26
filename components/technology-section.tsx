@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Container, SECTION_SPACING } from "@/lib/layout"
 
 export default function TechnologySection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -23,8 +24,8 @@ export default function TechnologySection() {
   }, [])
 
   return (
-    <section id="technology-section" className="py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="technology-section" className={`${SECTION_SPACING} bg-white`}>
+      <Container>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left - Dashboard Preview */}
           <div
@@ -52,7 +53,7 @@ export default function TechnologySection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Star } from "lucide-react"
+import { Container, SECTION_SPACING } from "@/lib/layout"
 
 export default function DashboardSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -23,8 +24,8 @@ export default function DashboardSection() {
   }, [])
 
   return (
-    <section id="dashboard-section" className="py-16 md:py-24 px-4 md:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section id="dashboard-section" className={`${SECTION_SPACING} bg-white`}>
+      <Container>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900  leading-tight tracking-tight">Our Key Healthcare</h2>
         <p className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 mb-4 leading-tight tracking-tight">Services</p>
 
@@ -127,7 +128,7 @@ export default function DashboardSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

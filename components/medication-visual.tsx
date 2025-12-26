@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Container, SECTION_SPACING } from "@/lib/layout"
+import IPhoneSection from "./iphone-section"
 
 export default function MedicationVisual() {
   const [isVisible, setIsVisible] = useState(false)
@@ -23,17 +25,11 @@ export default function MedicationVisual() {
   }, [])
 
   return (
-    <div id="medication-visual" className="max-w-7xl mx-auto">
-      {/* Watermark Text Background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden z-0">
-        <h2 className="text-7xl md:text-9xl font-bold text-gray-100 opacity-10 select-none whitespace-nowrap">
-          MEDICAL CAPSULE
-        </h2>
-      </div>
-
-      <div className="relative py-12 md:py-24 z-10">
+    <div id="medication-visual">
+      <Container>
+        <div className="relative z-10">
         {/* Left and Right Content with Centered Capsule */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left Side - Badge */}
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-3">
@@ -52,18 +48,16 @@ export default function MedicationVisual() {
             </p>
           </div>
         </div>
+      
 
         {/* Center Capsule Image */}
-        <div className="flex justify-center items-center mt-12 md:mt-16">
-          <div className={`transition-all duration-1000 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
-            
-          </div>
+        <div>
+          <IPhoneSection />
         </div>
       </div>
 
       {/* Streamline Your Health Care Section */}
-      <div className="relative z-10 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative z-10">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 md:gap-12">
             {/* Left Side - Text Content */}
             <div className="flex flex-col space-y-4 md:max-w-2xl">
@@ -85,7 +79,7 @@ export default function MedicationVisual() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

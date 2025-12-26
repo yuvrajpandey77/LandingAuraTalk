@@ -12,16 +12,26 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative pt-10 mx-auto  pb-0">
-      <div className="max-w-7xl -mx-8   mx-auto">
-        <div className="relative rounded-3xl overflow-hidden min-h-[600px] md:min-h-[700px]">
+    <section className="relative pt-2 pb-0">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="relative rounded-3xl overflow-hidden border border-gray-200 min-h-[600px] md:min-h-[700px]">
           {/* Background - White */}
           <div className="absolute inset-0 bg-white"></div>
+
+          {/* Colorful gradient - purple, pink, orange, yellow, cream mix */}
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: 'radial-gradient(ellipse 100% 80% at 92% 85%, #C8A8E9 0%, #D4B5F0 8%, #E8A5D6 15%, #FF8CC8 25%, #FF6B9D 35%, #FF7A5C 45%, #FF9F6B 55%, #FFB88C 65%, #FFD4B8 75%, #FFE5D4 85%, #FFFBF0 95%, #FFFFFF 100%)',
+              maskImage: 'radial-gradient(ellipse 90% 75% at 92% 85%, black 0%, black 40%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 65%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 90% 75% at 92% 85%, black 0%, black 40%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 65%, transparent 80%)',
+            }}
+          ></div>
 
           {/* Content Container */}
           <div className="relative z-10 p-8 md:p-12 lg:p-16 h-full min-h-[600px] md:min-h-[700px]">
             {/* Left Side Content */}
-            <div className="absolute left-8 md:left-12 lg:left-16 top-8 md:top-12 lg:top-16 right-1/2 pr-8 md:pr-12 lg:pr-16 flex flex-col h-[calc(100%-4rem)] md:h-[calc(100%-6rem)]">
+            <div className="absolute left-2 md:left-2 lg:left-4 top-8 md:top-12 lg:top-16 right-1/2  flex flex-col h-[calc(100%-4rem)] md:h-[calc(100%-6rem)]">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 mb-6 bg-white border border-black rounded-4xl px-4 py-2 w-fit">
                 <svg
@@ -52,24 +62,24 @@ export default function HeroSection() {
               {/* Doctor Image - Below text, at bottom */}
               <div className="mt-auto w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&h=800&fit=crop&q=80"
+                  src="./hero1.png"
                   alt="Doctor consulting patient"
-                  className="w-full h-auto object-cover rounded-2xl grayscale"
+                  className="w-350 h-75 object-cover rounded-2xl grayscale"
                 />
               </div>
             </div>
 
             {/* Right Side Content */}
-            <div className="absolute right-8 md:right-12 lg:right-16 top-8 md:top-12 lg:top-33 left-1/2 pl-8 md:pl-12 lg:pl-16 flex flex-col justify-center">
+            <div className="absolute right-2 md:right-2 lg:right-4 top-8 md:top-12 lg:top-33 left-1/2 pl-8 md:pl-12 lg:pl-16 flex flex-col justify-center">
               {/* Description Text */}
-              <p className="text-gray-900 text-base md:text-lg mb-8 max-w-xl leading-relaxed font-normal">
+              <p className="text-gray-900 text-base md:text-sm mb-8 max-w-xl leading-relaxed font-normal">
                 We strive to provide exceptional healthcare by focusing on compassion, innovation, and patient
-               
+                centered care with the help of technology in the comfort of your home and at your own pace and time.
               </p>
 
               {/* Buttons */}
               <div className="flex flex-row items-center gap-6">
-                <Button className="rounded-4xl bg-black hover:bg-gray-800 text-white px-8 py-6 text-base font-medium h-10">
+                <Button className="rounded-4xl bg-[#111111] hover:bg-black text-white px-8 py-6 text-base font-medium h-10">
                   Book an Appointment
                 </Button>
                 <a
@@ -103,7 +113,7 @@ export default function HeroSection() {
                       className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white object-cover"
                     />
                     {/* Badge on top of third avatar */}
-                    <span className="absolute -top-1 -right-1 text-xs font-bold text-white bg-purple-600 w-6 h-6 rounded-full flex items-center justify-center z-10">2K</span>
+                    <span className="absolute -top-1 -right-1 text-xs font-bold text-white w-6 h-6 rounded-full flex items-center justify-center z-10" style={{ backgroundColor: '#7C5CFA' }}>2K</span>
                   </div>
                 </div>
                 
@@ -113,7 +123,7 @@ export default function HeroSection() {
                 </p>
                 
                 {/* Arrow Button - square with rounded corners */}
-                <button className="bg-purple-600 hover:bg-purple-700 text-white p-2 rounded-lg flex-shrink-0 transition-colors w-8 h-8 flex items-center justify-center">
+                <button className="text-white p-2 rounded-lg flex-shrink-0 transition-colors w-8 h-8 flex items-center justify-center hover:opacity-90" style={{ backgroundColor: '#7C5CFA' }}>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>

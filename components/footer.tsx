@@ -1,7 +1,9 @@
+import { Container } from "@/lib/layout"
+
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-16 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-black text-white py-16">
+      <Container>
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Left - Mission */}
           <div>
@@ -94,7 +96,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }

@@ -2,6 +2,7 @@
 
 import { Bell } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Container } from "@/lib/layout"
 
 interface HeaderProps {
   isScrolled: boolean
@@ -10,9 +11,9 @@ interface HeaderProps {
 export default function Header({ isScrolled }: HeaderProps) {
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
+      <Container className="py-4">
         <div className="flex items-center justify-between">
           {/* Brand Name */}
           <div className="text-xl md:text-2xl font-bold text-gray-900">
@@ -54,7 +55,7 @@ export default function Header({ isScrolled }: HeaderProps) {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   )
 }
