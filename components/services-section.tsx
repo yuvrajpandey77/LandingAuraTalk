@@ -80,20 +80,20 @@ export default function ServicesSection() {
                 Compassionate care and expert support to help you achieve emotional balance, mental clarity, and lasting
                 well-being.
               </p>
-              <button className="text-pink-500 font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-auto">
+              <button className="text-[#FF5810] font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-auto">
                 Learn More <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>
 
-          {/* Middle Card - Meet Our Expert Doctors (Purple) */}
-          <div className="rounded-2xl overflow-hidden bg-purple-400 shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
+          {/* Middle Card - Meet Our Expert Doctors (Orange) */}
+          <div className="rounded-2xl overflow-hidden bg-[#FF5810] shadow-lg hover:shadow-xl transition-all duration-300 relative flex flex-col">
             {/* Top Section - Badge Area (similar height to image) */}
             <div className="h-48 relative">
               {/* Badge at Top */}
               <div className="absolute top-4 left-4 bg-white bg-opacity-90 rounded-lg px-3 py-2 flex items-center gap-2 z-10">
                 <svg
-                  className="w-4 h-4 text-purple-600"
+                  className="w-4 h-4 text-orange-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -118,7 +118,7 @@ export default function ServicesSection() {
                 Get to know our highly qualified doctors committed to providing personalized care and expert medical
                 guidance for every patient.
               </p>
-              <Button className="w-full rounded-4xl bg-white text-purple-600 hover:bg-gray-100 font-semibold py-6 mt-auto">
+              <Button className="w-full rounded-4xl bg-black text-white hover:bg-gray-800 font-semibold py-6 mt-auto">
                 Book an Appointment
               </Button>
             </div>
@@ -138,7 +138,7 @@ export default function ServicesSection() {
               <p className="text-gray-600 text-sm md:text-base mb-4 leading-relaxed flex-1">
                 Personalized one-on-one counseling sessions designed to address your unique emotional challenges.
               </p>
-              <button className="text-pink-500 font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-auto">
+              <button className="text-[#FF5810] font-semibold text-sm flex items-center gap-2 hover:gap-3 transition-all mt-auto">
                 Learn More <ArrowRight className="w-4 h-4" />
               </button>
             </div>

@@ -18,11 +18,11 @@ export default function HeroSection() {
           {/* Background - White */}
           <div className="absolute inset-0 bg-white"></div>
 
-          {/* Colorful gradient - purple, pink, orange, yellow, cream mix */}
-          <div 
+          {/* Colorful gradient - yellow and orange mix */}
+          <div
             className="absolute inset-0"
             style={{
-              background: 'radial-gradient(ellipse 100% 80% at 92% 85%, #C8A8E9 0%, #D4B5F0 8%, #E8A5D6 15%, #FF8CC8 25%, #FF6B9D 35%, #FF7A5C 45%, #FF9F6B 55%, #FFB88C 65%, #FFD4B8 75%, #FFE5D4 85%, #FFFBF0 95%, #FFFFFF 100%)',
+              background: 'radial-gradient(ellipse 100% 80% at 92% 85%, #FFDF2A 0%, #FFE066 15%, #FFA500 30%, #FF8C00 45%, #FF5810 60%, #FF4500 75%, #FFE5D4 85%, #FFFBF0 95%, #FFFFFF 100%)',
               maskImage: 'radial-gradient(ellipse 90% 75% at 92% 85%, black 0%, black 40%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 65%, transparent 80%)',
               WebkitMaskImage: 'radial-gradient(ellipse 90% 75% at 92% 85%, black 0%, black 40%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.4) 65%, transparent 80%)',
             }}
@@ -113,7 +113,7 @@ export default function HeroSection() {
                       className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white object-cover"
                     />
                     {/* Badge on top of third avatar */}
-                    <span className="absolute -top-1 -right-1 text-xs font-bold text-white w-6 h-6 rounded-full flex items-center justify-center z-10" style={{ backgroundColor: '#7C5CFA' }}>2K</span>
+                    <span className="absolute -top-1 -right-1 text-xs font-bold text-white w-6 h-6 rounded-full flex items-center justify-center z-10" style={{ backgroundColor: '#FF5810' }}>2K</span>
                   </div>
                 </div>
                 
@@ -123,7 +123,7 @@ export default function HeroSection() {
                 </p>
                 
                 {/* Arrow Button - square with rounded corners */}
-                <button className="text-white p-2 rounded-lg flex-shrink-0 transition-colors w-8 h-8 flex items-center justify-center hover:opacity-90" style={{ backgroundColor: '#7C5CFA' }}>
+                <button className="text-white p-2 rounded-lg flex-shrink-0 transition-colors w-8 h-8 flex items-center justify-center hover:opacity-90" style={{ backgroundColor: '#FF5810' }}>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>

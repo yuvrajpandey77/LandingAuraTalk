@@ -28,22 +28,22 @@ export default function Header({ isScrolled }: HeaderProps) {
           <div className="flex items-center gap-6">
             {/* Navigation */}
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 Home
               </a>
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 About Us
               </a>
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 Services
               </a>
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 Doctors
               </a>
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 Appointments
               </a>
-              <a href="#" className="text-gray-900 hover:text-pink-600 transition-colors text-sm font-medium">
+              <a href="#" className="text-gray-900 hover:text-orange-600 transition-colors text-sm font-medium">
                 Blog
               </a>
             </nav>
