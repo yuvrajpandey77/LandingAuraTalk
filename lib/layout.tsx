@@ -16,7 +16,7 @@ interface ContainerProps {
 
 export function Container({ children, className = "" }: ContainerProps) {
   return (
-    <div className={`mx-auto px-6 md:px-12 ${className}`}>
+    <div className={`mx-auto px-4 sm:px-6 md:px-12 ${className}`}>
       {children}
     </div>
   )
@@ -24,7 +24,7 @@ export function Container({ children, className = "" }: ContainerProps) {
 
 /**
  * Standard vertical spacing for sections
- * Use: py-16 md:py-24
+ * Use: py-12 sm:py-16 md:py-24
  */
-export const SECTION_SPACING = "py-16 md:py-24"
+export const SECTION_SPACING = "py-12 sm:py-16 md:py-24"
 

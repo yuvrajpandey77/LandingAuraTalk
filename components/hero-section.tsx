@@ -29,13 +29,13 @@ export default function HeroSection() {
           ></div>
 
           {/* Content Container */}
-          <div className="relative z-10 p-8 md:p-12 lg:p-16 h-full min-h-[37.5rem] md:min-h-[43.75rem]">
+          <div className="relative z-10 p-4 md:p-8 lg:p-12 xl:p-16 h-full min-h-[37.5rem] md:min-h-[43.75rem]">
             {/* Left Side Content */}
-            <div className="absolute left-2 md:left-2 lg:left-4 top-8 md:top-12 lg:top-16 right-1/2  flex flex-col h-[calc(100%-4rem)] md:h-[calc(100%-6rem)]">
+            <div className="relative md:absolute left-0 md:left-2 lg:left-4 top-0 md:top-8 lg:top-12 xl:top-16 right-0 md:right-1/2 flex flex-col h-auto md:h-[calc(100%-4rem)] lg:h-[calc(100%-6rem)]">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 mb-6 bg-white border border-black rounded-4xl px-4 py-2 w-fit">
+              <div className="inline-flex items-center gap-2 mb-4 md:mb-6 bg-white border border-black rounded-4xl px-3 md:px-4 py-2 w-fit">
                 <svg
-                  className="w-4 h-4 text-black"
+                  className="w-3.5 h-3.5 md:w-4 md:h-4 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -47,11 +47,11 @@ export default function HeroSection() {
                     d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                   />
                 </svg>
-                <span className="text-sm font-medium text-black">Expert Doctors</span>
+                <span className="text-xs md:text-sm font-medium text-black">Expert Doctors</span>
               </div>
 
               {/* Headline */}
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 mb-8 leading-tight tracking-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-gray-900 mb-4 md:mb-8 leading-tight tracking-tight">
                 Our Mission Delivering
                 <br />
                 Compassionate,
@@ -60,7 +60,7 @@ export default function HeroSection() {
               </h1>
 
               {/* Doctor Image - Below text, at bottom */}
-              <div className="mt-auto w-full">
+              <div className="mt-4 md:mt-auto w-full">
                 <img
                   src="./hero1.png"
                   alt="Doctor consulting patient"
@@ -70,21 +70,21 @@ export default function HeroSection() {
             </div>
 
             {/* Right Side Content */}
-            <div className="absolute right-2 md:right-2 lg:right-4 top-8 md:top-12 lg:top-33 left-1/2 pl-8 md:pl-12 lg:pl-16 flex flex-col justify-center">
+            <div className="relative md:absolute right-0 md:right-2 lg:right-4 top-auto md:top-8 lg:top-12 xl:top-33 left-0 md:left-1/2 pl-0 md:pl-8 lg:pl-12 xl:pl-16 flex flex-col justify-center mt-6 md:mt-0 mb-20 md:mb-0">
               {/* Description Text */}
-              <p className="text-gray-900 text-base md:text-sm mb-8 max-w-xl leading-relaxed font-normal">
+              <p className="text-gray-900 text-sm md:text-base lg:text-sm mb-4 md:mb-8 max-w-xl leading-relaxed font-normal">
                 We strive to provide exceptional healthcare by focusing on compassion, innovation, and patient
                 centered care with the help of technology in the comfort of your home and at your own pace and time.
               </p>
 
               {/* Buttons */}
-              <div className="flex flex-row items-center gap-6">
-                <Button className="rounded-4xl bg-[#111111] hover:bg-black text-white px-8 py-6 text-base font-medium h-10">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 md:gap-6">
+                <Button className="rounded-4xl bg-[#111111] hover:bg-black text-white px-6 md:px-8 py-4 md:py-6 text-sm md:text-base font-medium h-auto md:h-10 w-full sm:w-auto">
                   Book an Appointment
                 </Button>
                 <a
                   href="#"
-                  className="text-orange-600 hover:text-orange-700 underline text-base font-medium"
+                  className="text-orange-600 hover:text-orange-700 underline text-sm md:text-base font-medium text-center sm:text-left"
                 >
                   Find a Doctor
                 </a>
@@ -92,7 +92,7 @@ export default function HeroSection() {
             </div>
 
             {/* Bottom Right Card */}
-            <div className="absolute bottom-6 right-6 md:bottom-8 md:right-8 bg-white rounded-xl shadow-lg p-4 md:p-5 w-auto max-w-[280px]">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 right-4 md:right-6 lg:bottom-8 lg:right-8 bg-white rounded-xl shadow-lg p-3 md:p-4 lg:p-5 w-[calc(100%-2rem)] md:w-auto max-w-[280px] z-20">
               <div className="flex items-center gap-3">
                 {/* Avatars with Badge */}
                 <div className="flex -space-x-2 relative flex-shrink-0">

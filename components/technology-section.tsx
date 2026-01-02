@@ -26,7 +26,7 @@ export default function TechnologySection() {
   return (
     <section id="technology-section" className={`${SECTION_SPACING} bg-white`}>
       <Container>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           {/* Left - Dashboard Preview */}
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
@@ -38,16 +38,16 @@ export default function TechnologySection() {
 
           {/* Right - Content */}
           <div
-            className={`flex flex-col justify-center space-y-6 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+            className={`flex flex-col justify-center space-y-4 sm:space-y-6 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 leading-tight tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-gray-900 leading-tight tracking-tight">
               Improving health with intelligent technology
             </h2>
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
               Our innovative health technology delivers personalized healthcare solutions that enhance wellness, prevent illness, and promote healthier lifestyles.
             </p>
-            <div className="pt-4">
-              <Button className="rounded-full bg-white text-black border border-black hover:bg-gray-800 hover:text-white font-semibold px-8 py-6 text-base">
+            <div className="pt-2 sm:pt-4">
+              <Button className="rounded-full bg-white text-black border border-black hover:bg-gray-800 hover:text-white font-semibold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base w-full sm:w-auto">
                 Book a Free Consultation
               </Button>
             </div>
